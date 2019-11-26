@@ -9,3 +9,20 @@ property.index:
 property.show:
   path: /biens/{slug}{id}
   controller: App\Controller\PropertyController::show
+
+admin.property.index:
+  path: /admin
+  controller: App\Controller\Admin\AdminPropertyController::index
+
+admin.property.edit:
+  path: /admin/property/update/{id}
+  controller: App\Controller\Admin\AdminPropertyController::edit
+
+
+admin.property.new:
+  path: /admin/property/create
+  controller: App\Controller\Admin\AdminPropertyController::new
+  
+admin.property.delete:
+  path: /admin/property/delete/{id}
+  controller: App\Controller\Admin\AdminPropertyController::delete
