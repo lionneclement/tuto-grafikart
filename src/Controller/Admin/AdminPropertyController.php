@@ -72,4 +72,9 @@ private $repository;
     }
     return $this->redirectToRoute('admin.property.index');
   }
+
+  public function logout()
+  {
+    throw new \Exception('Don\'t forget to activate logout in security.yaml');
+  }
 }
